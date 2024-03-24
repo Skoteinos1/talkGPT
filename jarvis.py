@@ -25,3 +25,9 @@ llm_model = 'llama2-uncensored'  # for talking
 set_laguage = 'en'
 # set_langage = 'hu'
 # set_laguage = 'sk' 
+
+if talking_library == 'TTS.api':
+    from TTS.api import TTS
+    
+    # TTS().list_models()
+    # TTS.list_models()
