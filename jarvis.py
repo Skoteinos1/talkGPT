@@ -31,3 +31,13 @@ if talking_library == 'TTS.api':
     
     # TTS().list_models()
     # TTS.list_models()
+    
+    if set_laguage == 'en':
+        # tts = TTS(model_name='tts_models/multilingual/multi-dataset/xtts_v2', progress_bar=True, gpu=True)  # Model is multi-speaker but no `speaker` is provided
+        # tts = TTS(model_name='tts_models/en/blizzard2013/capacitron-t2-c150_v2', progress_bar=True, gpu=True)  # Randotron
+
+        tts = TTS(model_name='tts_models/en/jenny/jenny', progress_bar=True, gpu=True,) # The best
+        # tts = TTS(model_name='tts_models/en/ljspeech/overflow', progress_bar=True, gpu=True)
+    
+        # tts = TTS(model_name='tts_models/en/ljspeech/fast_pitch', progress_bar=True, gpu=True)  
+        # tts = TTS(model_name='tts_models/en/multi-dataset/tortoise-v2', progress_bar=True, gpu=True)  # Not enough memory
