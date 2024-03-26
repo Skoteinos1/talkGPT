@@ -39,5 +39,9 @@ if talking_library == 'TTS.api':
         tts = TTS(model_name='tts_models/en/jenny/jenny', progress_bar=True, gpu=True,) # The best
         # tts = TTS(model_name='tts_models/en/ljspeech/overflow', progress_bar=True, gpu=True)
     
-        # tts = TTS(model_name='tts_models/en/ljspeech/fast_pitch', progress_bar=True, gpu=True)  
+        # tts = TTS(model_name='tts_models/en/ljspeech/fast_pitch', progress_bar=True, gpu=True)
+    elif set_laguage == 'sk':
+        tts = TTS(model_name='tts_models/sk/cv/vits', progress_bar=True, gpu=True)  # SK
+    elif set_laguage == 'hu':
+        tts = TTS(model_name='tts_models/hu/css10/vits', progress_bar=True, gpu=True)  # HU
         # tts = TTS(model_name='tts_models/en/multi-dataset/tortoise-v2', progress_bar=True, gpu=True)  # Not enough memory
